@@ -3,7 +3,6 @@ package c2b.oberstein.util;
 import c2b.oberstein.*;
 import com.google.gson.*;
 import lombok.*;
-
 import java.io.*;
 
 
@@ -34,10 +33,20 @@ public class QuizIOUtil {
       try {
          reader = new BufferedReader(new FileReader(file));
          returnQuiz = gson.fromJson(reader.readLine(), Quiz.class);
+         reader.close();
       }catch (IOException e){
          //TODO: add ERROR popup
       }
       return returnQuiz;
+   }
+   
+   public static Quiz[] getAllQuizesAsArray(){
+      File[] files = new File(absolutePathTo).listFiles();
+      Quiz[] arr = new Quiz[files.length];
+      for (int i = 0; i < arr.length; i++) {
+         arr[i] = gson.fromJson(files[i].getName(), Quiz.class);
+      }
+      return arr;
    }
    
    public static boolean deleteQuiz(String name){

@@ -4,27 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87db4c2e-f51b-44e0-a99d-0cb3f766a0c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Components/QuizListView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/MainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/HomeView.form" afterDir="false" />
+    <list default="true" id="87db4c2e-f51b-44e0-a99d-0cb3f766a0c9" name="Changes" comment="Bez GUI ale jinak zaklad by mel bejt">
+      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/HomeViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/QuizListViewController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/HomeView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/HomeViewPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/QuestionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/Quiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/util/QuizIOUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Components/QuizListView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Components/QuizListView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/HomeViewPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/QuestionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/QuestionType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/Quiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/util/QuizIOUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/util/QuizIOUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +61,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
@@ -91,15 +85,53 @@
       <updated>1734699154993</updated>
       <workItem from="1734699156062" duration="2751000" />
       <workItem from="1734701940206" duration="8920000" />
-      <workItem from="1734711123180" duration="3025000" />
+      <workItem from="1734711123180" duration="4196000" />
+      <workItem from="1734787540657" duration="4882000" />
+      <workItem from="1734803807016" duration="628000" />
+      <workItem from="1734806425052" duration="4341000" />
     </task>
+    <task id="LOCAL-00001" summary="Bez GUI ale jinak zaklad by mel bejt">
+      <option name="closed" value="true" />
+      <created>1734716756884</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734716756884</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Bez GUI ale jinak zaklad by mel bejt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bez GUI ale jinak zaklad by mel bejt" />
+  </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.gk646.codestats.settings.Save">
+    <option name="commitTimePoints">
+      <list>
+        <TimePoint>
+          <option name="timestamp" value="1734716756970" />
+          <option name="linesCode" value="93" />
+          <option name="totalLines" value="271" />
+          <option name="info" value="Bez GUI ale jinak zaklad by mel bejt" />
+        </TimePoint>
+      </list>
+    </option>
+    <option name="genericTimePoints">
+      <list>
+        <TimePoint>
+          <option name="timestamp" value="1734716756970" />
+          <option name="linesCode" value="93" />
+          <option name="totalLines" value="271" />
+          <option name="info" value="Dec 20, 2024" />
+        </TimePoint>
+      </list>
+    </option>
   </component>
 </project>
