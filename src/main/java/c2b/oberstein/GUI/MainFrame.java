@@ -1,7 +1,8 @@
 package c2b.oberstein.GUI;
 
+
 import c2b.oberstein.GUI.Views.*;
-import com.sun.javafx.logging.jfr.*;
+
 import lombok.*;
 
 import javax.swing.*;
@@ -13,13 +14,14 @@ import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 public class MainFrame extends JFrame{
    
    private HomeView homeView = new HomeView();
+   private ManageQuizView manageQuizView = new ManageQuizView();
    
    
    public MainFrame() {
       this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-      this.setSize(1000,600);
+      this.setSize(1000,650);
       this.setResizable(false);
-      this.add(homeView);
+      this.add(manageQuizView);
       this.setVisible(true);
    }
 }

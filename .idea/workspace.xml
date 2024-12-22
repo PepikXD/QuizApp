@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87db4c2e-f51b-44e0-a99d-0cb3f766a0c9" name="Changes" comment="Bez GUI ale jinak zaklad by mel bejt">
-      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/HomeViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/QuizListViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/HomeView.java" afterDir="false" />
+    <list default="true" id="87db4c2e-f51b-44e0-a99d-0cb3f766a0c9" name="Changes" comment="xd">
+      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/ManageQuizController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/ManageQuizView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Components/QuizListView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Components/QuizListView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Components/QuizListView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/QuizListViewController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/HomeViewPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/HomeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/HomeView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/QuestionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/QuestionType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/Quiz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/util/QuizIOUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/util/QuizIOUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,27 +46,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE": "left",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE&quot;: &quot;left&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -88,7 +87,10 @@
       <workItem from="1734711123180" duration="4196000" />
       <workItem from="1734787540657" duration="4882000" />
       <workItem from="1734803807016" duration="628000" />
-      <workItem from="1734806425052" duration="4341000" />
+      <workItem from="1734806425052" duration="4390000" />
+      <workItem from="1734872574079" duration="6418000" />
+      <workItem from="1734884753607" duration="4318000" />
+      <workItem from="1734893220816" duration="670000" />
     </task>
     <task id="LOCAL-00001" summary="Bez GUI ale jinak zaklad by mel bejt">
       <option name="closed" value="true" />
@@ -106,7 +108,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Bez GUI ale jinak zaklad by mel bejt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bez GUI ale jinak zaklad by mel bejt" />
+    <MESSAGE value="xd" />
+    <option name="LAST_COMMIT_MESSAGE" value="xd" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="quizzes.length" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

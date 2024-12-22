@@ -1,12 +1,9 @@
 package c2b.oberstein.GUI.Views;
 
 import c2b.oberstein.GUI.Controllers.*;
-import net.miginfocom.swing.*;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
-import java.beans.*;
 
 public class HomeView extends JPanel {
    
@@ -28,10 +25,11 @@ public class HomeView extends JPanel {
       
    }
    
-   private void initialize(){
+   private void initialize() {
       mainTextLabel = new JLabel("Quiz App");
       mainTextLabel.setBounds(350, 75, 300, 100);
       mainTextLabel.setFont(new Font("Unispace", Font.PLAIN, 50));
+      mainTextLabel.setHorizontalAlignment(SwingConstants.CENTER);
       
       pictureLabel = new JLabel("");
       pictureLabel.setBounds(400, 175, 200, 200);

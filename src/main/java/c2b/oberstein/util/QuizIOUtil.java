@@ -40,13 +40,24 @@ public class QuizIOUtil {
       return returnQuiz;
    }
    
-   public static Quiz[] getAllQuizesAsArray(){
+   public static Quiz[] getAllQuizzesAsArray(){
       File[] files = new File(absolutePathTo).listFiles();
-      Quiz[] arr = new Quiz[files.length];
-      for (int i = 0; i < arr.length; i++) {
-         arr[i] = gson.fromJson(files[i].getName(), Quiz.class);
+      Quiz[] quizzes = new Quiz[files.length];
+      BufferedReader reader;
+      for (int i = 0; i < quizzes.length; i++) {
+         quizzes[i] = readQuiz(files[i].getName());
       }
-      return arr;
+      
+      return quizzes;
+   }
+   
+   public static String[] getAllQuizzesNamesAsArray(){
+      File[] files = new File(absolutePathTo).listFiles();
+      String[] names = new String[files.length];
+      for (int i = 0; i < names.length; i++) {
+         names[i] = files[i].getName();
+      }
+      return names;
    }
    
    public static boolean deleteQuiz(String name){
