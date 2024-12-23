@@ -15,19 +15,19 @@ public class Question {
    /**
     * Constructor for multiplechoise question
     * @param question
-    * @param answer1
-    * @param answer2
-    * @param answer3
-    * @param answer4
+    * @param correct
+    * @param wrong1
+    * @param wrong2
+    * @param wrong3
     */
-   public Question(String question, String answer1, String answer2, String answer3, String answer4){
+   public Question(String question, String correct, String wrong1, String wrong2, String wrong3){
       questionType = QuestionType.MULTIPLE_CHOICE;
       this.question = question;
       multipleChoiceAnswers = new String[]{
-              answer1,
-              answer2,
-              answer3,
-              answer4
+              correct,
+              wrong1,
+              wrong2,
+              wrong3
       };
    }
    

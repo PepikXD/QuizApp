@@ -4,6 +4,7 @@ import c2b.oberstein.*;
 import com.google.gson.*;
 import lombok.*;
 import java.io.*;
+import java.util.*;
 
 
 public class QuizIOUtil {
@@ -40,14 +41,12 @@ public class QuizIOUtil {
       return returnQuiz;
    }
    
-   public static Quiz[] getAllQuizzesAsArray(){
+   public static List <Quiz> getAllQuizzesAsArray(){
       File[] files = new File(absolutePathTo).listFiles();
-      Quiz[] quizzes = new Quiz[files.length];
-      BufferedReader reader;
-      for (int i = 0; i < quizzes.length; i++) {
-         quizzes[i] = readQuiz(files[i].getName());
+      List<Quiz> quizzes = new ArrayList <>();
+      for (File f:files){
+         quizzes.add(readQuiz(f.getName()));
       }
-      
       return quizzes;
    }
    

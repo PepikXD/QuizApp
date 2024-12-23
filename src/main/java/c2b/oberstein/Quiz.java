@@ -12,8 +12,12 @@ public class Quiz {
    private String name;
    private List<Question> questions;
    
-   public String getName(){
-      return name;
+   public String[] getQuestionsAsArray(){
+      String[] s = new String[questions.size()];
+      for (int i = 0; i < s.length; i++) {
+         s[i] = questions.get(i).getQuestion();
+      }
+      return s;
    }
    
 }

@@ -6,6 +6,17 @@ public enum QuestionType {
    OPEN("Open"),
    ;
    
-   QuestionType(String s) {
+   final String value;
+   
+   QuestionType(String value) {
+      this.value = value;
+   }
+   
+   public static String[] getEnumValuesAsStrings(){
+      String[] s = new String[QuestionType.values().length];
+      for (int i = 0; i < s.length; i++) {
+         s[i] = QuestionType.values()[i].value;
+      }
+      return s;
    }
 }

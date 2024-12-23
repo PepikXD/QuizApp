@@ -10,12 +10,8 @@ import java.util.*;
 public class Main {
    public static void main(String[] args) {
       
-      QuizIOUtil.saveQuiz(new Quiz("A",new ArrayList <>()));
-      QuizIOUtil.saveQuiz(new Quiz("B",new ArrayList <>()));
-      QuizIOUtil.saveQuiz(new Quiz("C",new ArrayList <>()));
-      QuizIOUtil.saveQuiz(new Quiz("D",new ArrayList <>()));
-      
-      MainFrame mainFrame = new MainFrame();
+      QuizApp quizApp = new QuizApp();
+      quizApp.run();
    
    }
 }
