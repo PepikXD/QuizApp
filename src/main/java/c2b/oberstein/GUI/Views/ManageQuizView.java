@@ -300,22 +300,21 @@ public class ManageQuizView extends JPanel {
       btnCreate.setBounds(225, 325, 150, 50);
       btnCreate.addActionListener(actionEvent -> ManageQuizController.createQuiz(CreateQuizNameTextField.getText()));
       createQuizPanel.add(btnCreate);
-      btnCreate.setVisible(false);
+      btnCreate.setVisible(true);
       
-//      btnSaveQuiz = new JButton("Save");
-//      btnSaveQuiz.setFont(new Font("Unispace", Font.PLAIN, 20));
-//      btnSaveQuiz.setBounds(225, 325, 150, 50);
-//      btnSaveQuiz.addActionListener(actionEvent -> ManageQuizController.saveQuiz(CreateQuizNameTextField.getText(), getQuizComboBox().getSelectedIndex()));
-//      createQuizPanel.add(btnSaveQuiz);
-//      btnSaveQuiz.setVisible(true);
-//
-//      btnGoBack = new JButton("Back");
-//      btnSaveQuiz.setFont(new Font("Unispace", Font.PLAIN, 15));
-//      btnSaveQuiz.setBounds(100, 100, 300, 200);
-//      btnGoBack.setHorizontalAlignment(SwingConstants.CENTER);
-//      btnGoBack.addActionListener(actionEvent -> ManageQuizController.goBack());
-//      btnGoBack.setVisible(true);
-//      btnGoBack.setBorder(new LineBorder(Color.BLACK,50));
+      btnSaveQuiz = new JButton("Save");
+      btnSaveQuiz.setFont(new Font("Unispace", Font.PLAIN, 20));
+      btnSaveQuiz.setBounds(225, 325, 150, 50);
+      btnSaveQuiz.addActionListener(actionEvent -> ManageQuizController.saveQuiz(CreateQuizNameTextField.getText(), getQuizComboBox().getSelectedIndex()));
+      createQuizPanel.add(btnSaveQuiz);
+      btnSaveQuiz.setVisible(false);
+
+      btnGoBack = new JButton("Back");
+      btnGoBack.setFont(new Font("Unispace", Font.PLAIN, 15));
+      btnGoBack.setBounds(10, 10, 75, 25);
+      btnGoBack.setHorizontalAlignment(SwingConstants.CENTER);
+      btnGoBack.addActionListener(actionEvent -> ManageQuizController.goBack());
+      btnGoBack.setVisible(true);
       
    }
    
