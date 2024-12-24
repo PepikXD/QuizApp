@@ -1,1 +1,1 @@
-{"name":"B","questions":[]}
+{"name":"B","questions":[{"questionType":"YES_OR_NO","question":"a","yesOrNoAnswer":true},{"questionType":"OPEN","question":"b","yesOrNoAnswer":false,"openAnswer":"negr"},{"questionType":"MULTIPLE_CHOICE","question":"c","multipleChoiceAnswers":["1","2","3","4"],"yesOrNoAnswer":false}]}

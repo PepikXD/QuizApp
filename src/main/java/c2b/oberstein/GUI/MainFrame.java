@@ -7,21 +7,23 @@ import lombok.*;
 
 import javax.swing.*;
 
-import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
 
 @Data
 public class MainFrame extends JFrame{
    
    private HomeView homeView = new HomeView();
-   private ManageQuizView manageQuizView = new ManageQuizView();
+   private ManageQuizView manageQuizView;
    
    
    public MainFrame() {
-      this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-      this.setSize(1000,650);
-      this.setResizable(false);
-      this.add(manageQuizView);
-      this.setVisible(true);
+      
+      manageQuizView = new ManageQuizView();
+      
+      setDefaultCloseOperation(EXIT_ON_CLOSE);
+      setSize(1000,650);
+      setResizable(false);
+      add(manageQuizView);
+      setVisible(true);
    }
 }

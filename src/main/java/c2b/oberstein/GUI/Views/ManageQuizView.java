@@ -1,16 +1,13 @@
 package c2b.oberstein.GUI.Views;
 
 
-
-import c2b.oberstein.*;
 import c2b.oberstein.GUI.Controllers.*;
-import c2b.oberstein.util.*;
-import com.sun.security.auth.*;
+import c2b.oberstein.*;
 import lombok.*;
 
 import javax.swing.*;
-import javax.swing.border.*;
 import java.awt.*;
+
 @Data
 public class ManageQuizView extends JPanel {
    
@@ -29,7 +26,7 @@ public class ManageQuizView extends JPanel {
    private JLabel lblWrongAnsMltpChoice_1;
    private JLabel lblWrongAnsMltpChoice_2;
    private JLabel lblWrongAnsMltpChoice_3;
-   private JButton btnSave;
+   private JButton btnCreateQuestion;
    private JButton btnSaveQuiz;
    private JLabel lblManageQuizes;
    private JComboBox quizComboBox;
@@ -43,9 +40,10 @@ public class ManageQuizView extends JPanel {
    private JPanel createQuizPanel;
    private JLabel lblCreateQuiz;
    private JLabel lblCreateQuizName;
-   private JButton btnCreate;
+   private JButton btnCreateQuiz;
    private JButton btnGoBack;
-   private JTextField CreateQuizNameTextField;
+   private JButton btnSaveQuestion;
+   private JTextField createQuizNameTextField;
    private JTextField questionTextField;
    private JTextField CorrectAnsMltpChoiceTextField;
    private JTextField WrongAnsMltpChoiceTextField_1;
@@ -75,16 +73,11 @@ public class ManageQuizView extends JPanel {
       add(btnAddNewQuestion);
       add(createQuizPanel);
       
-      
-      editQuestionPanel.setVisible(false);
-      multipleChoicePanel.setVisible(false);
-      yesOrNoPanel.setVisible(false);
-      openQuestionPanel.setVisible(false);
-
-      
+      //ManageQuizController.switchCreationPanel(0);
+      //ManageQuizController.switchQuestionTypePanel(questTypeComboBox.getSelectedIndex());
    }
    
-   private void initialize(){
+   private void initialize() {
       editQuestionPanel = new JPanel();
       editQuestionPanel.setBounds(375, 175, 600, 400);
       editQuestionPanel.setLayout(null);
@@ -120,8 +113,8 @@ public class ManageQuizView extends JPanel {
       
       correctAnsOpenQuestTextField = new JTextField();
       correctAnsOpenQuestTextField.setBounds(190, 0, 360, 30);
+      correctAnsOpenQuestTextField.setFont(new Font("Unispace", Font.PLAIN, 15));
       openQuestionPanel.add(correctAnsOpenQuestTextField);
-      correctAnsOpenQuestTextField.setColumns(10);
       
       lblEditQuest = new JLabel("Edit Question");
       lblEditQuest.setHorizontalAlignment(SwingConstants.CENTER);
@@ -137,9 +130,8 @@ public class ManageQuizView extends JPanel {
       
       questionTextField = new JTextField();
       questionTextField.setBounds(145, 75, 430, 30);
-      questionTextField.setFont(new Font("Unispace", Font.PLAIN, 20));
+      questionTextField.setFont(new Font("Unispace", Font.PLAIN, 15));
       editQuestionPanel.add(questionTextField);
-      questionTextField.setColumns(10);
       
       lblQuestType = new JLabel("Question Type:");
       lblQuestType.setHorizontalAlignment(SwingConstants.LEFT);
@@ -147,11 +139,12 @@ public class ManageQuizView extends JPanel {
       lblQuestType.setBounds(25, 115, 170, 30);
       editQuestionPanel.add(lblQuestType);
       
-      questTypeComboBox = new JComboBox<>(QuestionType.getEnumValuesAsStrings());
+      questTypeComboBox = new JComboBox <>(QuestionType.getEnumValuesAsStrings());
       questTypeComboBox.setFont(new Font("Unispace", Font.PLAIN, 15));
       questTypeComboBox.setBounds(205, 115, 200, 30);
       questTypeComboBox.setSelectedIndex(0);
       editQuestionPanel.add(questTypeComboBox);
+      questTypeComboBox.addActionListener(_ -> ManageQuizController.switchQuestionTypePanel(questTypeComboBox.getSelectedIndex()));
       
       multipleChoicePanel = new JPanel();
       multipleChoicePanel.setBounds(25, 170, 550, 150);
@@ -165,8 +158,8 @@ public class ManageQuizView extends JPanel {
       multipleChoicePanel.add(lblCorrectAnsMltpChoice);
       
       CorrectAnsMltpChoiceTextField = new JTextField();
-      CorrectAnsMltpChoiceTextField.setColumns(10);
       CorrectAnsMltpChoiceTextField.setBounds(190, 0, 360, 30);
+      CorrectAnsMltpChoiceTextField.setFont(new Font("Unispace", Font.PLAIN, 15));
       multipleChoicePanel.add(CorrectAnsMltpChoiceTextField);
       
       lblWrongAnsMltpChoice_1 = new JLabel("Wrong Answer:");
@@ -176,8 +169,8 @@ public class ManageQuizView extends JPanel {
       multipleChoicePanel.add(lblWrongAnsMltpChoice_1);
       
       WrongAnsMltpChoiceTextField_1 = new JTextField();
-      WrongAnsMltpChoiceTextField_1.setColumns(10);
       WrongAnsMltpChoiceTextField_1.setBounds(190, 40, 360, 30);
+      WrongAnsMltpChoiceTextField_1.setFont(new Font("Unispace", Font.PLAIN, 15));
       multipleChoicePanel.add(WrongAnsMltpChoiceTextField_1);
       
       lblWrongAnsMltpChoice_2 = new JLabel("Wrong Answer:");
@@ -187,8 +180,8 @@ public class ManageQuizView extends JPanel {
       multipleChoicePanel.add(lblWrongAnsMltpChoice_2);
       
       WrongAnsMltpChoiceTextField_2 = new JTextField();
-      WrongAnsMltpChoiceTextField_2.setColumns(10);
       WrongAnsMltpChoiceTextField_2.setBounds(190, 80, 360, 30);
+      WrongAnsMltpChoiceTextField_2.setFont(new Font("Unispace", Font.PLAIN, 15));
       multipleChoicePanel.add(WrongAnsMltpChoiceTextField_2);
       
       lblWrongAnsMltpChoice_3 = new JLabel("Wrong Answer:");
@@ -198,44 +191,63 @@ public class ManageQuizView extends JPanel {
       multipleChoicePanel.add(lblWrongAnsMltpChoice_3);
       
       WrongAnsMltpChoiceTextField_3 = new JTextField();
-      WrongAnsMltpChoiceTextField_3.setColumns(10);
       WrongAnsMltpChoiceTextField_3.setBounds(190, 120, 360, 30);
+      WrongAnsMltpChoiceTextField_3.setFont(new Font("Unispace", Font.PLAIN, 15));
       multipleChoicePanel.add(WrongAnsMltpChoiceTextField_3);
       
-      btnSave = new JButton("Save");
-      btnSave.setFont(new Font("Unispace", Font.PLAIN, 20));
-      btnSave.setBounds(225, 335, 150, 50);
-      btnSave.addActionListener(actionEvent -> {
-         Question question = null;
-         switch (questTypeComboBox.getSelectedIndex()){
-            case 0:
-               question = new Question(
-                       getQuestionTextField().getText(),
-                       getCorrectAnsMltpChoiceTextField().getText(),
-                       getWrongAnsMltpChoiceTextField_1().getText(),
-                       getWrongAnsMltpChoiceTextField_2().getText(),
-                       getWrongAnsMltpChoiceTextField_3().getText());
-               break;
-            case 1:
-               question = new Question(
-                       getQuestionTextField().getText(),
-                       getRdbtnYes().isSelected()); //Yes and No rdbtn are in btn group --> if yes is selected, no cant be annd vice versa
-               break;
-            case 2:
-               question = new Question(
-                       getQuestionTextField().getText(),
-                       getCorrectAnsOpenQuestTextField().getText());
-         }
-         ManageQuizController.saveQuestion(question,quizComboBox.getSelectedIndex());
+      btnCreateQuestion = new JButton("Create");
+      btnCreateQuestion.setFont(new Font("Unispace", Font.PLAIN, 20));
+      btnCreateQuestion.setBounds(225, 335, 150, 50);
+      btnCreateQuestion.addActionListener(_ -> {
+         Question question = switch (questTypeComboBox.getSelectedIndex()) {
+            case 0 -> new Question(
+                    getQuestionTextField().getText(),
+                    getCorrectAnsMltpChoiceTextField().getText(),
+                    getWrongAnsMltpChoiceTextField_1().getText(),
+                    getWrongAnsMltpChoiceTextField_2().getText(),
+                    getWrongAnsMltpChoiceTextField_3().getText());
+            case 1 -> new Question(
+                    getQuestionTextField().getText(),
+                    getRdbtnYes().isSelected()); //Yes and No rdbtn are in btn group --> if yes is selected, no cant be annd vice versa
+            case 2 -> new Question(
+                    getQuestionTextField().getText(),
+                    getCorrectAnsOpenQuestTextField().getText());
+            default -> null;
+         };
+         ManageQuizController.saveQuestion(question, quizComboBox.getSelectedIndex());
       });
-      editQuestionPanel.add(btnSave);
+      editQuestionPanel.add(btnCreateQuestion);
+      
+      btnSaveQuestion = new JButton("Save");
+      btnSaveQuestion.setFont(new Font("Unispace", Font.PLAIN, 20));
+      btnSaveQuestion.setBounds(225, 335, 150, 50);
+      btnSaveQuestion.addActionListener(_ -> QuizApp.getQuizzes().
+              get(quizComboBox.getSelectedIndex()).
+              getQuestions().
+              set(questionComboBox.getSelectedIndex(),
+                      switch (questTypeComboBox.getSelectedIndex()) {
+                           case 0 -> new Question(
+                                   getQuestionTextField().getText(),
+                                   getCorrectAnsMltpChoiceTextField().getText(),
+                                   getWrongAnsMltpChoiceTextField_1().getText(),
+                                   getWrongAnsMltpChoiceTextField_2().getText(),
+                                   getWrongAnsMltpChoiceTextField_3().getText());
+                           case 1 -> new Question(
+                                   getQuestionTextField().getText(),
+                                   getRdbtnYes().isSelected()); //Yes and No rdbtn are in btn group --> if yes is selected, no cant be annd vice versa
+                           case 2 -> new Question(
+                                   getQuestionTextField().getText(),
+                                   getCorrectAnsOpenQuestTextField().getText());
+                           default -> null;
+                        }));
+      editQuestionPanel.add(btnSaveQuestion);
       
       lblManageQuizes = new JLabel("Manage Quizes");
       lblManageQuizes.setHorizontalAlignment(SwingConstants.CENTER);
       lblManageQuizes.setFont(new Font("Unispace", Font.PLAIN, 50));
       lblManageQuizes.setBounds(250, 25, 500, 100);
       
-      quizComboBox = new JComboBox<>(QuizApp.getQuizzesNames());
+      quizComboBox = new JComboBox <>(QuizApp.getQuizzesNames());
       quizComboBox.setFont(new Font("Unispace", Font.PLAIN, 15));
       quizComboBox.setBounds(60, 230, 250, 30);
       quizComboBox.setSelectedIndex(0);
@@ -250,29 +262,30 @@ public class ManageQuizView extends JPanel {
       lblChooseQuestion.setFont(new Font("Unispace", Font.PLAIN, 25));
       lblChooseQuestion.setBounds(60, 385, 250, 40);
       
-      questionComboBox = new JComboBox<>(QuizApp.getQuizzes().get(getQuizComboBox().getSelectedIndex()).getQuestionsAsArray());
+      questionComboBox = new JComboBox <>(QuizApp.getQuizzes().get(getQuizComboBox().getSelectedIndex()).getQuestionsAsArray());
       questionComboBox.setFont(new Font("Unispace", Font.PLAIN, 15));
       questionComboBox.setBounds(60, 430, 250, 30);
+      questionComboBox.setSelectedIndex(0);
       
       btbDeleteSelectedQuiz = new JButton("Delete Selected Quiz");
       btbDeleteSelectedQuiz.setFont(new Font("Unispace", Font.PLAIN, 20));
       btbDeleteSelectedQuiz.setBounds(20, 275, 330, 30);
-      btbDeleteSelectedQuiz.addActionListener(actionEvent -> ManageQuizController.deleteSelecetedQuiz(getQuizComboBox().getSelectedIndex()));
+      btbDeleteSelectedQuiz.addActionListener(_ -> ManageQuizController.deleteSelecetedQuiz(getQuizComboBox().getSelectedIndex()));
       
       btnAddNewQuiz = new JButton("Add New Quiz");
       btnAddNewQuiz.setFont(new Font("Unispace", Font.PLAIN, 20));
       btnAddNewQuiz.setBounds(20, 320, 330, 30);
-      btnAddNewQuiz.addActionListener(actionEvent -> ManageQuizController.showPanelToCreateQuiz());
+      btnAddNewQuiz.addActionListener(_ -> ManageQuizController.showPanelToCreateQuiz());
       
       btnDeleteSelectedQuestion = new JButton("Delete Selected Question");
       btnDeleteSelectedQuestion.setFont(new Font("Unispace", Font.PLAIN, 20));
       btnDeleteSelectedQuestion.setBounds(20, 475, 330, 30);
-      btnDeleteSelectedQuestion.addActionListener(actionEvent -> ManageQuizController.deleteSelecetedQuestion(getQuestionComboBox().getSelectedIndex(),getQuizComboBox().getSelectedIndex()));
+      btnDeleteSelectedQuestion.addActionListener(_ -> ManageQuizController.deleteSelecetedQuestion(getQuestionComboBox().getSelectedIndex(), getQuizComboBox().getSelectedIndex()));
       
       btnAddNewQuestion = new JButton("Add New Question");
       btnAddNewQuestion.setFont(new Font("Unispace", Font.PLAIN, 20));
       btnAddNewQuestion.setBounds(20, 520, 330, 30);
-      btnAddNewQuestion.addActionListener(actionEvent -> ManageQuizController.showPanelToCrateQuestion());
+      btnAddNewQuestion.addActionListener(_ -> ManageQuizController.showPanelToEditQuestion());
       
       createQuizPanel = new JPanel();
       createQuizPanel.setBounds(375, 175, 600, 400);
@@ -290,30 +303,30 @@ public class ManageQuizView extends JPanel {
       lblCreateQuizName.setBounds(25, 100, 75, 40);
       createQuizPanel.add(lblCreateQuizName);
       
-      CreateQuizNameTextField = new JTextField();
-      CreateQuizNameTextField.setBounds(110, 100, 465, 40);
-      createQuizPanel.add(CreateQuizNameTextField);
-      CreateQuizNameTextField.setColumns(10);
+      createQuizNameTextField = new JTextField();
+      createQuizNameTextField.setBounds(110, 100, 465, 40);
+      createQuizNameTextField.setFont(new Font("Unispace", Font.PLAIN, 15));
+      createQuizPanel.add(createQuizNameTextField);
       
-      btnCreate = new JButton("Create");
-      btnCreate.setFont(new Font("Unispace", Font.PLAIN, 20));
-      btnCreate.setBounds(225, 325, 150, 50);
-      btnCreate.addActionListener(actionEvent -> ManageQuizController.createQuiz(CreateQuizNameTextField.getText()));
-      createQuizPanel.add(btnCreate);
-      btnCreate.setVisible(true);
+      btnCreateQuiz = new JButton("Create");
+      btnCreateQuiz.setFont(new Font("Unispace", Font.PLAIN, 20));
+      btnCreateQuiz.setBounds(225, 325, 150, 50);
+      btnCreateQuiz.addActionListener(_ -> ManageQuizController.createQuiz(createQuizNameTextField.getText()));
+      createQuizPanel.add(btnCreateQuiz);
+      btnCreateQuiz.setVisible(true);
       
       btnSaveQuiz = new JButton("Save");
       btnSaveQuiz.setFont(new Font("Unispace", Font.PLAIN, 20));
       btnSaveQuiz.setBounds(225, 325, 150, 50);
-      btnSaveQuiz.addActionListener(actionEvent -> ManageQuizController.saveQuiz(CreateQuizNameTextField.getText(), getQuizComboBox().getSelectedIndex()));
+      btnSaveQuiz.addActionListener(_ -> ManageQuizController.saveQuiz(createQuizNameTextField.getText(), getQuizComboBox().getSelectedIndex()));
       createQuizPanel.add(btnSaveQuiz);
       btnSaveQuiz.setVisible(false);
-
+      
       btnGoBack = new JButton("Back");
       btnGoBack.setFont(new Font("Unispace", Font.PLAIN, 15));
       btnGoBack.setBounds(10, 10, 75, 25);
       btnGoBack.setHorizontalAlignment(SwingConstants.CENTER);
-      btnGoBack.addActionListener(actionEvent -> ManageQuizController.goBack());
+      btnGoBack.addActionListener(_ -> ManageQuizController.goBack());
       btnGoBack.setVisible(true);
       
    }
