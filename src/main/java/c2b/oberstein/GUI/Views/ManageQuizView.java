@@ -51,6 +51,7 @@ public class ManageQuizView extends JPanel {
    private JTextField WrongAnsMltpChoiceTextField_3;
    private JTextField correctAnsOpenQuestTextField;
    private final ButtonGroup buttonGroup = new ButtonGroup();
+   private JButton btnSaveChanges;
    
    /**
     * Create the panel.
@@ -61,6 +62,7 @@ public class ManageQuizView extends JPanel {
       
       setLayout(null);
       add(btnGoBack);
+      add(btnSaveChanges);
       add(editQuestionPanel);
       add(lblManageQuizes);
       add(quizComboBox);
@@ -72,9 +74,14 @@ public class ManageQuizView extends JPanel {
       add(btnDeleteSelectedQuestion);
       add(btnAddNewQuestion);
       add(createQuizPanel);
+
+      createQuizPanel.setVisible(true);
+      editQuestionPanel.setVisible(false);
       
-      //ManageQuizController.switchCreationPanel(0);
-      //ManageQuizController.switchQuestionTypePanel(questTypeComboBox.getSelectedIndex());
+      multipleChoicePanel.setVisible(true);
+      yesOrNoPanel.setVisible(false);
+      openQuestionPanel.setVisible(false);
+      
    }
    
    private void initialize() {
@@ -214,7 +221,7 @@ public class ManageQuizView extends JPanel {
                     getCorrectAnsOpenQuestTextField().getText());
             default -> null;
          };
-         ManageQuizController.saveQuestion(question, quizComboBox.getSelectedIndex());
+         ManageQuizController.createQuestion(question, quizComboBox.getSelectedIndex());
       });
       editQuestionPanel.add(btnCreateQuestion);
       
@@ -250,7 +257,10 @@ public class ManageQuizView extends JPanel {
       quizComboBox = new JComboBox <>(QuizApp.getQuizzesNames());
       quizComboBox.setFont(new Font("Unispace", Font.PLAIN, 15));
       quizComboBox.setBounds(60, 230, 250, 30);
-      quizComboBox.setSelectedIndex(0);
+      quizComboBox.addActionListener(_ -> {
+         ManageQuizController.setQuestionComboBoxValues(quizComboBox.getSelectedIndex());
+         ManageQuizController.showPanelToCreateQuiz(quizComboBox.getSelectedIndex());
+      });
       
       lblChooseQuiz = new JLabel("Choose Quiz");
       lblChooseQuiz.setHorizontalAlignment(SwingConstants.CENTER);
@@ -262,10 +272,18 @@ public class ManageQuizView extends JPanel {
       lblChooseQuestion.setFont(new Font("Unispace", Font.PLAIN, 25));
       lblChooseQuestion.setBounds(60, 385, 250, 40);
       
-      questionComboBox = new JComboBox <>(QuizApp.getQuizzes().get(getQuizComboBox().getSelectedIndex()).getQuestionsAsArray());
+      questionComboBox = new JComboBox <>();
+      try {
+         for (String s : QuizApp.getQuizzes().get(getQuizComboBox().getSelectedIndex()).getQuestionsAsArray()) {
+            questionComboBox.addItem(s);
+         }
+      }catch (IndexOutOfBoundsException e){
+         System.out.println(e.getMessage());
+      }
+      
       questionComboBox.setFont(new Font("Unispace", Font.PLAIN, 15));
       questionComboBox.setBounds(60, 430, 250, 30);
-      questionComboBox.setSelectedIndex(0);
+      questionComboBox.addActionListener(_ -> ManageQuizController.showPanelToEditQuestion(questionComboBox.getSelectedIndex(),quizComboBox.getSelectedIndex()));
       
       btbDeleteSelectedQuiz = new JButton("Delete Selected Quiz");
       btbDeleteSelectedQuiz.setFont(new Font("Unispace", Font.PLAIN, 20));
@@ -275,7 +293,7 @@ public class ManageQuizView extends JPanel {
       btnAddNewQuiz = new JButton("Add New Quiz");
       btnAddNewQuiz.setFont(new Font("Unispace", Font.PLAIN, 20));
       btnAddNewQuiz.setBounds(20, 320, 330, 30);
-      btnAddNewQuiz.addActionListener(_ -> ManageQuizController.showPanelToCreateQuiz());
+      btnAddNewQuiz.addActionListener(_ -> ManageQuizController.showPanelToCreateQuiz(-1));
       
       btnDeleteSelectedQuestion = new JButton("Delete Selected Question");
       btnDeleteSelectedQuestion.setFont(new Font("Unispace", Font.PLAIN, 20));
@@ -285,7 +303,7 @@ public class ManageQuizView extends JPanel {
       btnAddNewQuestion = new JButton("Add New Question");
       btnAddNewQuestion.setFont(new Font("Unispace", Font.PLAIN, 20));
       btnAddNewQuestion.setBounds(20, 520, 330, 30);
-      btnAddNewQuestion.addActionListener(_ -> ManageQuizController.showPanelToEditQuestion());
+      btnAddNewQuestion.addActionListener(_ -> ManageQuizController.showPanelToEditQuestion(-1,-1));
       
       createQuizPanel = new JPanel();
       createQuizPanel.setBounds(375, 175, 600, 400);
@@ -329,6 +347,11 @@ public class ManageQuizView extends JPanel {
       btnGoBack.addActionListener(_ -> ManageQuizController.goBack());
       btnGoBack.setVisible(true);
       
+      btnSaveChanges = new JButton("Save Changes");
+      btnSaveChanges.setBounds(775,10,200,50);
+      btnSaveChanges.setFont(new Font("Unispace", Font.PLAIN, 20));
+      btnSaveChanges.setHorizontalAlignment(SwingConstants.CENTER);
+      btnSaveChanges.addActionListener(_ -> ManageQuizController.saveChanges());
    }
    
 }

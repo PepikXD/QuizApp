@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87db4c2e-f51b-44e0-a99d-0cb3f766a0c9" name="Changes" comment="neco nak tak funguje">
+    <list default="true" id="87db4c2e-f51b-44e0-a99d-0cb3f766a0c9" name="Changes" comment="fakt mrdka">
+      <change afterPath="$PROJECT_DIR$/quizes/Auto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quizes/A" beforeDir="false" afterPath="$PROJECT_DIR$/quizes/A" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quizes/B" beforeDir="false" afterPath="$PROJECT_DIR$/quizes/B" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quizes/C" beforeDir="false" afterPath="$PROJECT_DIR$/quizes/C" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quizes/D" beforeDir="false" afterPath="$PROJECT_DIR$/quizes/D" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quizes/A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quizes/B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quizes/C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quizes/D" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/ManageQuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/ManageQuizController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/MainFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/ManageQuizView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/ManageQuizView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/QuizApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/QuizApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/QuestionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/QuestionType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/util/QuizIOUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/util/QuizIOUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +65,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -95,7 +96,8 @@
       <workItem from="1734973925681" duration="10720000" />
       <workItem from="1734993024376" duration="82000" />
       <workItem from="1734993624485" duration="137000" />
-      <workItem from="1735074034264" duration="4864000" />
+      <workItem from="1735074034264" duration="5235000" />
+      <workItem from="1735134475638" duration="6039000" />
     </task>
     <task id="LOCAL-00001" summary="Bez GUI ale jinak zaklad by mel bejt">
       <option name="closed" value="true" />
@@ -129,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734993756842</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fakt mrdka">
+      <option name="closed" value="true" />
+      <created>1735079235220</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735079235220</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,7 +152,8 @@
     <MESSAGE value="Manage quiz UI zaklad, udelat tak aby bylo videt jenom to co chci delat, vymyslet jak reaktivne menit obsah comboboxu at odpovidaj realite po delete, add, update" />
     <MESSAGE value="xdd" />
     <MESSAGE value="neco nak tak funguje" />
-    <option name="LAST_COMMIT_MESSAGE" value="neco nak tak funguje" />
+    <MESSAGE value="fakt mrdka" />
+    <option name="LAST_COMMIT_MESSAGE" value="fakt mrdka" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -190,6 +201,12 @@
           <option name="totalLines" value="790" />
           <option name="info" value="neco nak tak funguje" />
         </TimePoint>
+        <TimePoint>
+          <option name="timestamp" value="1735079236102" />
+          <option name="linesCode" value="519" />
+          <option name="totalLines" value="837" />
+          <option name="info" value="fakt mrdka" />
+        </TimePoint>
       </list>
     </option>
     <option name="genericTimePoints">
@@ -211,6 +228,12 @@
           <option name="linesCode" value="485" />
           <option name="totalLines" value="790" />
           <option name="info" value="Dec 23, 2024" />
+        </TimePoint>
+        <TimePoint>
+          <option name="timestamp" value="1735079236102" />
+          <option name="linesCode" value="519" />
+          <option name="totalLines" value="837" />
+          <option name="info" value="Dec 24, 2024" />
         </TimePoint>
       </list>
     </option>

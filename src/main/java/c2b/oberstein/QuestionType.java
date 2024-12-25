@@ -12,6 +12,10 @@ public enum QuestionType {
       this.value = value;
    }
    
+   public String getStringRepresentation(QuestionType questionType){
+      return questionType.value;
+   }
+   
    public static String[] getEnumValuesAsStrings(){
       String[] s = new String[QuestionType.values().length];
       for (int i = 0; i < s.length; i++) {

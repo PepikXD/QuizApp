@@ -43,7 +43,7 @@ public class QuizIOUtil {
    
    public static List <Quiz> getAllQuizzesAsArray(){
       File[] files = new File(absolutePathTo).listFiles();
-      List<Quiz> quizzes = new ArrayList <>();
+      List<Quiz> quizzes = new ArrayList <>(1);
       for (File f:files){
          quizzes.add(readQuiz(f.getName()));
       }
