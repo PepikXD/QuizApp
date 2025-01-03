@@ -14,6 +14,7 @@ public class MainFrame extends JFrame{
    
    private HomeView homeView = new HomeView();
    private ManageQuizView manageQuizView;
+   private QuizView quizView = new QuizView("A");
    
    
    public MainFrame() {
@@ -23,7 +24,7 @@ public class MainFrame extends JFrame{
       setDefaultCloseOperation(EXIT_ON_CLOSE);
       setSize(1000,650);
       setResizable(false);
-      add(manageQuizView);
+      add(quizView);
       setVisible(true);
    }
 }

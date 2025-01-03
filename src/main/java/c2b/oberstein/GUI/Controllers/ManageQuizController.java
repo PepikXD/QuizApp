@@ -31,7 +31,7 @@ public class ManageQuizController {
          manageQuizView.getQuestionTextField().setText(q.getQuestion());
          manageQuizView.getQuestTypeComboBox().setSelectedItem(q.getQuestionType().name());
          
-         switch (q.getQuestionType().getStringRepresentation(q.getQuestionType())){
+         switch (q.getQuestionType().value){
             case "Multiple Choice" -> {
                manageQuizView.getCorrectAnsMltpChoiceTextField().setText(q.getMultipleChoiceAnswers()[0]);
                manageQuizView.getWrongAnsMltpChoiceTextField_1().setText(q.getMultipleChoiceAnswers()[1]);
@@ -41,8 +41,8 @@ public class ManageQuizController {
             case "Yes Or No" -> manageQuizView.getRdbtnYes().setSelected(q.isYesOrNoAnswer());
             case "Open" -> manageQuizView.getCorrectAnsOpenQuestTextField().setText(q.getOpenAnswer());
          }
-         System.out.println(q.getQuestionType().getStringRepresentation(q.getQuestionType()));
-         manageQuizView.getQuestTypeComboBox().setSelectedItem(q.getQuestionType().getStringRepresentation(q.getQuestionType()));
+         System.out.println(q.getQuestionType().value);
+         manageQuizView.getQuestTypeComboBox().setSelectedItem(q.getQuestionType().value);
          
          manageQuizView.getBtnCreateQuestion().setVisible(false);
          manageQuizView.getBtnSaveQuestion().setVisible(true);

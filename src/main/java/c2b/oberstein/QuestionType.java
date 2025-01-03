@@ -6,14 +6,10 @@ public enum QuestionType {
    OPEN("Open"),
    ;
    
-   final String value;
+   public String value;
    
    QuestionType(String value) {
       this.value = value;
-   }
-   
-   public String getStringRepresentation(QuestionType questionType){
-      return questionType.value;
    }
    
    public static String[] getEnumValuesAsStrings(){

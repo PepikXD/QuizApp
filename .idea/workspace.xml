@@ -4,18 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87db4c2e-f51b-44e0-a99d-0cb3f766a0c9" name="Changes" comment="fakt mrdka">
-      <change afterPath="$PROJECT_DIR$/quizes/Auto" afterDir="false" />
+    <list default="true" id="87db4c2e-f51b-44e0-a99d-0cb3f766a0c9" name="Changes" comment="Nejspisi finkci manage quiz, uz jenom actually quiz udelat">
+      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/QuizViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/QuizPanels/MltpChoicePanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/QuizPanels/OpenPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/QuizPanels/QuizPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/QuizPanels/YesOrNoPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/QuizView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quizes/A" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quizes/B" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quizes/C" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quizes/D" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/ManageQuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/ManageQuizController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/ManageQuizView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/ManageQuizView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/MainFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/QuestionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/QuestionType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/util/QuizIOUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/util/QuizIOUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +32,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -47,28 +49,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE": "left",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE&quot;: &quot;left&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -97,7 +99,8 @@
       <workItem from="1734993024376" duration="82000" />
       <workItem from="1734993624485" duration="137000" />
       <workItem from="1735074034264" duration="5235000" />
-      <workItem from="1735134475638" duration="6039000" />
+      <workItem from="1735134475638" duration="6131000" />
+      <workItem from="1735923400867" duration="7037000" />
     </task>
     <task id="LOCAL-00001" summary="Bez GUI ale jinak zaklad by mel bejt">
       <option name="closed" value="true" />
@@ -139,11 +142,42 @@
       <option name="project" value="LOCAL" />
       <updated>1735079235220</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Nejspisi finkci manage quiz, uz jenom actually quiz udelat">
+      <option name="closed" value="true" />
+      <created>1735140615209</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1735140615209</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -153,7 +187,8 @@
     <MESSAGE value="xdd" />
     <MESSAGE value="neco nak tak funguje" />
     <MESSAGE value="fakt mrdka" />
-    <option name="LAST_COMMIT_MESSAGE" value="fakt mrdka" />
+    <MESSAGE value="Nejspisi finkci manage quiz, uz jenom actually quiz udelat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nejspisi finkci manage quiz, uz jenom actually quiz udelat" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -207,6 +242,12 @@
           <option name="totalLines" value="837" />
           <option name="info" value="fakt mrdka" />
         </TimePoint>
+        <TimePoint>
+          <option name="timestamp" value="1735140615540" />
+          <option name="linesCode" value="589" />
+          <option name="totalLines" value="932" />
+          <option name="info" value="Nejspisi finkci manage quiz, uz jenom actually qui" />
+        </TimePoint>
       </list>
     </option>
     <option name="genericTimePoints">
@@ -234,6 +275,12 @@
           <option name="linesCode" value="519" />
           <option name="totalLines" value="837" />
           <option name="info" value="Dec 24, 2024" />
+        </TimePoint>
+        <TimePoint>
+          <option name="timestamp" value="1735140615540" />
+          <option name="linesCode" value="589" />
+          <option name="totalLines" value="932" />
+          <option name="info" value="Dec 25, 2024" />
         </TimePoint>
       </list>
     </option>
