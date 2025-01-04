@@ -13,18 +13,17 @@ import javax.swing.*;
 public class MainFrame extends JFrame{
    
    private HomeView homeView = new HomeView();
-   private ManageQuizView manageQuizView;
-   private QuizView quizView = new QuizView("A");
+   private ManageQuizView manageQuizView = new ManageQuizView();
+   private QuizView quizView = null;
+   private EndScreenView endScreenView = new EndScreenView();
    
    
    public MainFrame() {
       
-      manageQuizView = new ManageQuizView();
-      
       setDefaultCloseOperation(EXIT_ON_CLOSE);
       setSize(1000,650);
       setResizable(false);
-      add(quizView);
+      add(homeView);
       setVisible(true);
    }
 }
