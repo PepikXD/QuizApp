@@ -1,11 +1,18 @@
 package c2b.oberstein.GUI.Views;
 
+import c2b.oberstein.*;
 import c2b.oberstein.GUI.Controllers.*;
+import c2b.oberstein.util.*;
+import lombok.*;
 
 import javax.swing.*;
 import java.awt.*;
 
+
+@Data
 public class EndScreenView extends JPanel {
+   
+   private Quiz playedQuiz;
    
    private JButton btnPlayAgain;
    private JButton btnChangeQuiz;
@@ -15,7 +22,9 @@ public class EndScreenView extends JPanel {
    private JLabel lblScoreText;
    private JLabel lblCorrectXyWrong;
    
-   public EndScreenView() {
+   public EndScreenView(String quizName) {
+      playedQuiz = QuizIOUtil.readQuiz(quizName);
+      
       setLayout(null);
       
       initialze();
@@ -52,7 +61,7 @@ public class EndScreenView extends JPanel {
       lblQuizNameText.setBounds(350, 30, 300, 50);
       
       
-      lblQuizName = new JLabel("QuizNamePlaceHolder");
+      lblQuizName = new JLabel(playedQuiz.getName());
       lblQuizName.setHorizontalAlignment(SwingConstants.CENTER);
       lblQuizName.setFont(new Font("Unispace", Font.PLAIN, 25));
       lblQuizName.setBounds(200, 90, 600, 50);
@@ -64,7 +73,7 @@ public class EndScreenView extends JPanel {
       lblScoreText.setBounds(350, 175, 300, 50);
       
       
-      lblCorrectXyWrong = new JLabel("Correct: XY Wrong: XY");
+      lblCorrectXyWrong = new JLabel("Correct: XY Wrong: XY"); //TODO:
       lblCorrectXyWrong.setHorizontalAlignment(SwingConstants.CENTER);
       lblCorrectXyWrong.setFont(new Font("Unispace", Font.PLAIN, 25));
       lblCorrectXyWrong.setBounds(200, 235, 600, 50);

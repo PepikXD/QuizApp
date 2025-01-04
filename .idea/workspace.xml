@@ -4,12 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87db4c2e-f51b-44e0-a99d-0cb3f766a0c9" name="Changes" comment="Funkci quizView,&#10;musi se dodelat vyhodnoceni a konecna obrazovka,&#10;a pak vsechno dokompletovat">
-      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/EndScreenController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/EndScreenView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/util/ChangePanels.java" afterDir="false" />
+    <list default="true" id="87db4c2e-f51b-44e0-a99d-0cb3f766a0c9" name="Changes" comment="endScreen Ready">
+      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/ChooseQuizController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/ChooseQuizView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quizes/A" beforeDir="false" afterPath="$PROJECT_DIR$/quizes/A" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quizes/B" beforeDir="false" afterPath="$PROJECT_DIR$/quizes/B" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quizes/C" beforeDir="false" afterPath="$PROJECT_DIR$/quizes/C" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quizes/D" beforeDir="false" afterPath="$PROJECT_DIR$/quizes/D" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/EndScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/EndScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/HomeViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/HomeViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/ManageQuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/ManageQuizController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/QuizViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/QuizViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/EndScreenView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/EndScreenView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/HomeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/HomeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/util/ChangePanels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/util/ChangePanels.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +106,8 @@
       <workItem from="1735074034264" duration="5235000" />
       <workItem from="1735134475638" duration="6131000" />
       <workItem from="1735923400867" duration="7534000" />
-      <workItem from="1736006608266" duration="851000" />
+      <workItem from="1736006608266" duration="1004000" />
+      <workItem from="1736008357949" duration="3889000" />
     </task>
     <task id="LOCAL-00001" summary="Bez GUI ale jinak zaklad by mel bejt">
       <option name="closed" value="true" />
@@ -154,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735931048364</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="endScreen Ready">
+      <option name="closed" value="true" />
+      <created>1736007605904</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1736007605904</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +212,8 @@
     <MESSAGE value="fakt mrdka" />
     <MESSAGE value="Nejspisi finkci manage quiz, uz jenom actually quiz udelat" />
     <MESSAGE value="Funkci quizView,&#10;musi se dodelat vyhodnoceni a konecna obrazovka,&#10;a pak vsechno dokompletovat" />
-    <option name="LAST_COMMIT_MESSAGE" value="Funkci quizView,&#10;musi se dodelat vyhodnoceni a konecna obrazovka,&#10;a pak vsechno dokompletovat" />
+    <MESSAGE value="endScreen Ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="endScreen Ready" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -259,6 +279,12 @@
           <option name="totalLines" value="1244" />
           <option name="info" value="Funkci quizView,&#10;musi se dodelat vyhodnoceni a kon" />
         </TimePoint>
+        <TimePoint>
+          <option name="timestamp" value="1736007606165" />
+          <option name="linesCode" value="857" />
+          <option name="totalLines" value="1359" />
+          <option name="info" value="endScreen Ready" />
+        </TimePoint>
       </list>
     </option>
     <option name="genericTimePoints">
@@ -298,6 +324,12 @@
           <option name="linesCode" value="787" />
           <option name="totalLines" value="1244" />
           <option name="info" value="Jan 3, 2025" />
+        </TimePoint>
+        <TimePoint>
+          <option name="timestamp" value="1736007606165" />
+          <option name="linesCode" value="857" />
+          <option name="totalLines" value="1359" />
+          <option name="info" value="Jan 4, 2025" />
         </TimePoint>
       </list>
     </option>

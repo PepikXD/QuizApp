@@ -1,12 +1,14 @@
 package c2b.oberstein.GUI.Controllers;
 
+import c2b.oberstein.util.*;
+
 public class HomeViewController {
    
    public static void goToManageView(){
-      System.out.println("1");
+      ChangePanels.changeToManage();
    }
    
    public static void goToQuizChooseView() {
-      System.out.println("2");
+      ChangePanels.changeToChooseQuiz();
    }
 }

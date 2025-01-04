@@ -1,1 +1,1 @@
-{"name":"B","questions":[{"questionType":"YES_OR_NO","question":"a","yesOrNoAnswer":true},{"questionType":"OPEN","question":"b","yesOrNoAnswer":false,"openAnswer":"negr"},{"questionType":"MULTIPLE_CHOICE","question":"c","multipleChoiceAnswers":["1","2","3","4"],"yesOrNoAnswer":false}]}
+{"name":"B","questions":[{"questionType":"YES_OR_NO","question":"aB","yesOrNoAnswer":true},{"questionType":"OPEN","question":"b","yesOrNoAnswer":false,"openAnswer":"negr456"},{"questionType":"MULTIPLE_CHOICE","question":"c","multipleChoiceAnswers":["1","2","3","4"],"yesOrNoAnswer":false}]}

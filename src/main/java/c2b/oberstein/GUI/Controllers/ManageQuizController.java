@@ -112,6 +112,7 @@ public class ManageQuizController {
    }
    
    public static void goBack() {
+      ChangePanels.changeToHome();
    }
    
    public static void switchQuestionTypePanel(int index) {
