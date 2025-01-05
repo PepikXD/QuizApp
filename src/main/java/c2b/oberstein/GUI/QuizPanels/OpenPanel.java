@@ -5,9 +5,9 @@ import c2b.oberstein.*;
 import javax.swing.*;
 import java.awt.*;
 
-public class OpenPanel extends QuizPanel{
+public class OpenPanel extends QuestionPanel {
    
-   private final Question question = super.getQuestion();
+   private Question question = super.getQuestion();
    private JTextArea txtAreaAnswer;
    private JLabel lblAnswer;
    

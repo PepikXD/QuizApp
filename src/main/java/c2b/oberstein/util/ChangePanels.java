@@ -6,7 +6,7 @@ import c2b.oberstein.GUI.Views.*;
 
 public class ChangePanels {
    
-   private static final MainFrame mainFrame = QuizApp.getMainFrame();
+   private static MainFrame mainFrame = QuizApp.getMainFrame();
    
    
    public static void changeToHome(){
@@ -30,7 +30,6 @@ public class ChangePanels {
    public static void changeToQuiz(String quizName){
       
       mainFrame.remove(mainFrame.getActivePanel());
-      mainFrame.setQuizView(null);
       mainFrame.setQuizView(new QuizView(quizName));
       mainFrame.setActivePanel(mainFrame.getQuizView());
       mainFrame.add(mainFrame.getActivePanel());

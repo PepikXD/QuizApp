@@ -4,21 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87db4c2e-f51b-44e0-a99d-0cb3f766a0c9" name="Changes" comment="endScreen Ready">
-      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/ChooseQuizController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/ChooseQuizView.java" afterDir="false" />
+    <list default="true" id="87db4c2e-f51b-44e0-a99d-0cb3f766a0c9" name="Changes" comment="mene se screeny ale kdyz das jakekoli quiz znova tak to najendou prestabne fungovat">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quizes/A" beforeDir="false" afterPath="$PROJECT_DIR$/quizes/A" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quizes/B" beforeDir="false" afterPath="$PROJECT_DIR$/quizes/B" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quizes/C" beforeDir="false" afterPath="$PROJECT_DIR$/quizes/C" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quizes/D" beforeDir="false" afterPath="$PROJECT_DIR$/quizes/D" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/EndScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/EndScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/HomeViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/HomeViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/ChooseQuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/ChooseQuizController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/ManageQuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/ManageQuizController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/QuizViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/QuizViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/EndScreenView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/EndScreenView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/HomeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/HomeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/QuizPanels/MltpChoicePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/QuizPanels/MltpChoicePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/QuizPanels/OpenPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/QuizPanels/OpenPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/QuizPanels/QuizPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/QuizPanels/QuestionPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/QuizPanels/YesOrNoPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/QuizPanels/YesOrNoPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/ManageQuizView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/ManageQuizView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/QuizView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/QuizView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/util/ChangePanels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/util/ChangePanels.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,28 +51,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE&quot;: &quot;left&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE": "left",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -107,7 +104,8 @@
       <workItem from="1735134475638" duration="6131000" />
       <workItem from="1735923400867" duration="7534000" />
       <workItem from="1736006608266" duration="1004000" />
-      <workItem from="1736008357949" duration="3889000" />
+      <workItem from="1736008357949" duration="4085000" />
+      <workItem from="1736032476356" duration="5941000" />
     </task>
     <task id="LOCAL-00001" summary="Bez GUI ale jinak zaklad by mel bejt">
       <option name="closed" value="true" />
@@ -173,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736007605904</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="mene se screeny ale kdyz das jakekoli quiz znova tak to najendou prestabne fungovat">
+      <option name="closed" value="true" />
+      <created>1736012437164</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1736012437164</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +219,8 @@
     <MESSAGE value="Nejspisi finkci manage quiz, uz jenom actually quiz udelat" />
     <MESSAGE value="Funkci quizView,&#10;musi se dodelat vyhodnoceni a konecna obrazovka,&#10;a pak vsechno dokompletovat" />
     <MESSAGE value="endScreen Ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="endScreen Ready" />
+    <MESSAGE value="mene se screeny ale kdyz das jakekoli quiz znova tak to najendou prestabne fungovat" />
+    <option name="LAST_COMMIT_MESSAGE" value="mene se screeny ale kdyz das jakekoli quiz znova tak to najendou prestabne fungovat" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -224,6 +231,11 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="javax.swing.JButton" memberName="actionListener" />
+      </pinned-members>
+    </pin-to-top-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="quizzes.length" language="JAVA" />
@@ -285,6 +297,12 @@
           <option name="totalLines" value="1359" />
           <option name="info" value="endScreen Ready" />
         </TimePoint>
+        <TimePoint>
+          <option name="timestamp" value="1736012437485" />
+          <option name="linesCode" value="937" />
+          <option name="totalLines" value="1490" />
+          <option name="info" value="mene se screeny ale kdyz das jakekoli quiz znova t" />
+        </TimePoint>
       </list>
     </option>
     <option name="genericTimePoints">
@@ -326,9 +344,9 @@
           <option name="info" value="Jan 3, 2025" />
         </TimePoint>
         <TimePoint>
-          <option name="timestamp" value="1736007606165" />
-          <option name="linesCode" value="857" />
-          <option name="totalLines" value="1359" />
+          <option name="timestamp" value="1736012437485" />
+          <option name="linesCode" value="937" />
+          <option name="totalLines" value="1490" />
           <option name="info" value="Jan 4, 2025" />
         </TimePoint>
       </list>

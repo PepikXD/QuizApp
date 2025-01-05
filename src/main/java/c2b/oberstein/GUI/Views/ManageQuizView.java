@@ -50,7 +50,7 @@ public class ManageQuizView extends JPanel {
    private JTextField WrongAnsMltpChoiceTextField_2;
    private JTextField WrongAnsMltpChoiceTextField_3;
    private JTextField correctAnsOpenQuestTextField;
-   private final ButtonGroup buttonGroup = new ButtonGroup();
+   private ButtonGroup buttonGroup = new ButtonGroup();
    private JButton btnSaveChanges;
    
    /**

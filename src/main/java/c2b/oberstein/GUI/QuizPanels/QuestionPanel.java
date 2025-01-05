@@ -9,17 +9,19 @@ import java.awt.*;
 
 
 @Data
-public class QuizPanel extends JPanel {
+public class QuestionPanel extends JPanel {
    
-   private final Question question;
+   private Question question;
    private JTextArea txtAreaQuestion;
    private JButton btnPrevious;
    private JButton btnNext;
    private JButton btnEnd;
    
    
-   public QuizPanel(Question question) {
+   public QuestionPanel(Question question) {
       this.question = question;
+      
+      setBounds(10,10,980,580);
       
       initialize();
 

@@ -5,19 +5,32 @@ import c2b.oberstein.GUI.Views.*;
 import c2b.oberstein.util.*;
 
 public class QuizViewController {
-   private static final QuizView quizView = QuizApp.getMainFrame().getQuizView();
+   private static QuizView quizView = QuizApp.getMainFrame().getQuizView();
    
-   
+
    public static void previousBtn() {
-      quizView.getTabbedPane().setSelectedIndex(quizView.getTabbedPane().getSelectedIndex()-1);
+      quizView.remove(quizView.getActivePanel());
+      quizView.setSelectedIndex(quizView.getSelectedIndex()-1);
+      quizView.setActivePanel(quizView.getQuestionPanelList().get(quizView.getSelectedIndex()));
+      quizView.add(quizView.getActivePanel());
+      quizView.revalidate();
+      quizView.repaint();
    }
-   
+
    public static void nextBtn(){
-      quizView.getTabbedPane().setSelectedIndex(quizView.getTabbedPane().getSelectedIndex()+1);
+      System.out.println(quizView.getQuestionPanelList());
+      System.out.println(quizView.getSelectedIndex());
+      quizView.remove(quizView.getActivePanel());
+      quizView.setSelectedIndex(quizView.getSelectedIndex()+1);
+      quizView.setActivePanel(quizView.getQuestionPanelList().get(quizView.getSelectedIndex()));
+      quizView.add(quizView.getActivePanel());
+      quizView.revalidate();
+      quizView.repaint();
    }
-   
+
    public static void endBtn() {
-      quizView.getTabbedPane().setSelectedIndex(0);
+      quizView.setSelectedIndex(0);
       ChangePanels.changeToEnd(quizView.getQuiz().getName());
+      QuizApp.getMainFrame().setQuizView(null);
    }
 }

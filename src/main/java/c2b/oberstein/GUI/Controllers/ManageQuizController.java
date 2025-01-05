@@ -10,7 +10,7 @@ import java.util.*;
 
 public class ManageQuizController {
    
-   private static final ManageQuizView manageQuizView = QuizApp.getMainFrame().getManageQuizView();
+   private static ManageQuizView manageQuizView = QuizApp.getMainFrame().getManageQuizView();
    
    public static void deleteSelecetedQuiz(int index){
       QuizApp.getQuizzes().remove(index);

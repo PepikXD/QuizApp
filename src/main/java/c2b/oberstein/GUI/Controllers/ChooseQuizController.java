@@ -7,7 +7,7 @@ public class ChooseQuizController {
    public static void play(int chosenQuizIndex){
       
       String chosenQuizName = QuizIOUtil.getAllQuizzesNamesAsArray()[chosenQuizIndex];
-      
+      System.out.println(chosenQuizName);
       ChangePanels.changeToQuiz(chosenQuizName);
       
    }

@@ -5,10 +5,10 @@ import c2b.oberstein.*;
 import javax.swing.*;
 import java.awt.*;
 
-public class YesOrNoPanel extends QuizPanel{
+public class YesOrNoPanel extends QuestionPanel {
    
    private ButtonGroup buttonGroup = new ButtonGroup();
-   private final Question question = super.getQuestion();
+   private Question question = super.getQuestion();
    private JRadioButton rdbtnYes;
    private JRadioButton rdbtnNo;
    private JLabel lblYes;

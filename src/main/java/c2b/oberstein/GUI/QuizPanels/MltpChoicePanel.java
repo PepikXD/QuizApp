@@ -7,11 +7,11 @@ import java.awt.*;
 import java.util.*;
 import java.util.List;
 
-public class MltpChoicePanel extends QuizPanel{
+public class MltpChoicePanel extends QuestionPanel {
    
-   private final ButtonGroup buttonGroup = new ButtonGroup();
+   private ButtonGroup buttonGroup = new ButtonGroup();
    
-   private final Question question = super.getQuestion();
+   private Question question = super.getQuestion();
    private JRadioButton rdbtnAnswer1;
    private JRadioButton rdbtnAnswer2;
    private JRadioButton rdbtnAnswer3;
