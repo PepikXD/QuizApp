@@ -16,6 +16,9 @@ public class QuizApp implements Runnable{
    @Getter
    @Setter
    private static MainFrame mainFrame;
+   @Getter
+   @Setter
+   private static CheckResults checkResults;
    
    public static String[] getQuizzesNames(){
       String[] s = new String[quizzes.size()];

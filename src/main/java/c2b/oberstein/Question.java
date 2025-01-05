@@ -9,6 +9,7 @@ public class Question {
    private QuestionType questionType;
    private String question;
    private String[] multipleChoiceAnswers;
+   private String correctMltpAnswer;
    private boolean yesOrNoAnswer;
    private String openAnswer;
    
@@ -23,6 +24,7 @@ public class Question {
    public Question(String question, String correct, String wrong1, String wrong2, String wrong3){
       questionType = QuestionType.MULTIPLE_CHOICE;
       this.question = question;
+      correctMltpAnswer = correct;
       multipleChoiceAnswers = new String[]{
               correct,
               wrong1,

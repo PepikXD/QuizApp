@@ -2,12 +2,13 @@ package c2b.oberstein.GUI.Views;
 
 import c2b.oberstein.GUI.Controllers.*;
 import c2b.oberstein.util.*;
+import lombok.*;
 
 import javax.swing.*;
 import javax.swing.border.*;
 import java.awt.*;
 import java.util.*;
-
+@Data
 public class ChooseQuizView extends JPanel{
    
    private JList quizList;

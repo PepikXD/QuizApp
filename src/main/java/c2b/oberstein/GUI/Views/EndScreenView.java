@@ -24,13 +24,12 @@ public class EndScreenView extends JPanel {
    
    public EndScreenView(String quizName) {
       playedQuiz = QuizIOUtil.readQuiz(quizName);
-      
       setLayout(null);
       
       initialze();
       
-      add(btnPlayAgain);
-      add(btnChangeQuiz);
+//      add(btnPlayAgain);
+//      add(btnChangeQuiz);
       add(btnEnd);
       add(lblQuizNameText);
       add(lblQuizName);
@@ -73,7 +72,7 @@ public class EndScreenView extends JPanel {
       lblScoreText.setBounds(350, 175, 300, 50);
       
       
-      lblCorrectXyWrong = new JLabel("Correct: XY Wrong: XY"); //TODO:
+      lblCorrectXyWrong = new JLabel(QuizApp.getCheckResults().getScoreTetx());
       lblCorrectXyWrong.setHorizontalAlignment(SwingConstants.CENTER);
       lblCorrectXyWrong.setFont(new Font("Unispace", Font.PLAIN, 25));
       lblCorrectXyWrong.setBounds(200, 235, 600, 50);

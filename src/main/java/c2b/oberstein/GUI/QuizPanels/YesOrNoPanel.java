@@ -1,9 +1,11 @@
 package c2b.oberstein.GUI.QuizPanels;
 
 import c2b.oberstein.*;
+import lombok.*;
 
 import javax.swing.*;
 import java.awt.*;
+@Data
 
 public class YesOrNoPanel extends QuestionPanel {
    
@@ -14,6 +16,13 @@ public class YesOrNoPanel extends QuestionPanel {
    private JLabel lblYes;
    private JLabel lblNo;
    
+   
+   
+   public YesOrNoPanel(){
+      super();
+      setLayout(null);
+      initialize();
+   }
    public YesOrNoPanel(Question question) {
       super(question);
       

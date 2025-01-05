@@ -17,6 +17,11 @@ public class QuestionPanel extends JPanel {
    private JButton btnNext;
    private JButton btnEnd;
    
+   public QuestionPanel(){
+      setBounds(10,10,980,580);
+      
+      initialize();
+   }
    
    public QuestionPanel(Question question) {
       this.question = question;
@@ -25,13 +30,15 @@ public class QuestionPanel extends JPanel {
       
       initialize();
 
+      btnPrevious.setVisible(false);
    }
    
    private void initialize(){
       
       txtAreaQuestion = new JTextArea();
       txtAreaQuestion.setRows(4);
-      txtAreaQuestion.setText(question.getQuestion());
+//      txtAreaQuestion.setText(question.getQuestion());
+      txtAreaQuestion.setText("");
       txtAreaQuestion.setEditable(false);
       txtAreaQuestion.setLineWrap(true);
       txtAreaQuestion.setFont(new Font("Unispace", Font.PLAIN, 30));
@@ -42,7 +49,7 @@ public class QuestionPanel extends JPanel {
       btnPrevious.setFont(new Font("Unispace", Font.PLAIN, 20));
       btnPrevious.setBounds(25, 500, 150, 40);
       btnPrevious.addActionListener(_ -> QuizViewController.previousBtn());
-      add(btnPrevious);
+//      add(btnPrevious);
       
       btnNext = new JButton("Next");
       btnNext.setFont(new Font("Unispace", Font.PLAIN, 20));

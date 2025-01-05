@@ -137,6 +137,7 @@ public class ManageQuizController {
       for (Quiz quiz : QuizApp.getQuizzes()) {
          QuizIOUtil.saveQuiz(quiz);
       }
+      QuizApp.getMainFrame().setChooseQuizView(new ChooseQuizView());
    }
    
    public static void setQuestionComboBoxValues(int quizIndex) {

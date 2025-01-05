@@ -2,6 +2,7 @@ package c2b.oberstein.util;
 
 import c2b.oberstein.*;
 import c2b.oberstein.GUI.*;
+import c2b.oberstein.GUI.Controllers.*;
 import c2b.oberstein.GUI.Views.*;
 
 public class ChangePanels {
@@ -31,6 +32,8 @@ public class ChangePanels {
       
       mainFrame.remove(mainFrame.getActivePanel());
       mainFrame.setQuizView(new QuizView(quizName));
+      QuizApp.setCheckResults(new CheckResults(mainFrame.getQuizView().getQuiz()));
+      QuizViewController.nextBtn();
       mainFrame.setActivePanel(mainFrame.getQuizView());
       mainFrame.add(mainFrame.getActivePanel());
       mainFrame.revalidate();
@@ -52,6 +55,7 @@ public class ChangePanels {
       
       mainFrame.remove(mainFrame.getActivePanel());
       mainFrame.setActivePanel(mainFrame.getChooseQuizView());
+      mainFrame.getChooseQuizView().getQuizList().setSelectedIndex(0);
       mainFrame.add(mainFrame.getActivePanel());
       mainFrame.revalidate();
       mainFrame.repaint();

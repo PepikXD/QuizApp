@@ -12,8 +12,8 @@ public class MainFrame extends JFrame {
    
    private HomeView homeView;
    private ManageQuizView manageQuizView;
-   private QuizView quizView = null;
-   private EndScreenView endScreenView = null;
+   private QuizView quizView;
+   private EndScreenView endScreenView;
    private ChooseQuizView chooseQuizView;
    
    private JPanel activePanel;
