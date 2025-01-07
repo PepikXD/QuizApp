@@ -5,30 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87db4c2e-f51b-44e0-a99d-0cb3f766a0c9" name="Changes" comment="furt ta mrdka nefnguje ale co se da delat uz to mrdam">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quizzes/TEST2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quizes/TEST" beforeDir="false" afterPath="$PROJECT_DIR$/quizzes/TEST" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quizes/retared" beforeDir="false" afterPath="$PROJECT_DIR$/quizzes/retared" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/ChooseQuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/ChooseQuizController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/EndScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/EndScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quizzes/retared" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/ManageQuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/ManageQuizController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/QuizViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/QuizViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/QuizPanels/MltpChoicePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/QuizPanels/MltpChoicePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/QuizPanels/OpenPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/QuizPanels/OpenPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/QuizPanels/QuestionPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/QuizPanels/QuestionPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/QuizPanels/YesOrNoPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/QuizPanels/YesOrNoPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/ChooseQuizView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/ChooseQuizView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/EndScreenView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/EndScreenView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/HomeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/HomeView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/ManageQuizView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/ManageQuizView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/QuizView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Views/QuizView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/QuestionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/QuestionType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/Quiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/QuizApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/QuizApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/util/ChangePanels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/util/ChangePanels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/c2b/oberstein/util/QuizIOUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/c2b/oberstein/util/QuizIOUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +105,7 @@
       <workItem from="1736032476356" duration="6011000" />
       <workItem from="1736085260655" duration="9248000" />
       <workItem from="1736199452457" duration="212000" />
-      <workItem from="1736237054657" duration="3991000" />
+      <workItem from="1736237054657" duration="6859000" />
     </task>
     <task id="LOCAL-00001" summary="Bez GUI ale jinak zaklad by mel bejt">
       <option name="closed" value="true" />
@@ -203,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736038489035</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="furt ta mrdka nefnguje ale co se da delat uz to mrdam">
+      <option name="closed" value="true" />
+      <created>1736241066787</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1736241066787</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +246,11 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/c2b/oberstein/GUI/Controllers/QuizViewController.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
@@ -334,6 +331,12 @@
           <option name="totalLines" value="1538" />
           <option name="info" value="furt ta mrdka nefnguje ale co se da delat uz to mr" />
         </TimePoint>
+        <TimePoint>
+          <option name="timestamp" value="1736241066935" />
+          <option name="linesCode" value="1018" />
+          <option name="totalLines" value="1691" />
+          <option name="info" value="furt ta mrdka nefnguje ale co se da delat uz to mr" />
+        </TimePoint>
       </list>
     </option>
     <option name="genericTimePoints">
@@ -381,9 +384,9 @@
           <option name="info" value="Jan 4, 2025" />
         </TimePoint>
         <TimePoint>
-          <option name="timestamp" value="1736241033703" />
+          <option name="timestamp" value="1736241066935" />
           <option name="linesCode" value="1018" />
-          <option name="totalLines" value="1629" />
+          <option name="totalLines" value="1691" />
           <option name="info" value="Jan 7, 2025" />
         </TimePoint>
       </list>

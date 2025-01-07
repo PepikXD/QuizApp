@@ -1,0 +1,1 @@
+{"name":"TEST2","questions":[{"questionType":"MULTIPLE_CHOICE","question":"MultipleChoiceTest","multipleChoiceAnswers":["Correct","wrong","wrong2","wrong3"],"correctMltpAnswer":"Correct","yesOrNoAnswer":false},{"questionType":"YES_OR_NO","question":"YesOrNoTest","yesOrNoAnswer":true},{"questionType":"OPEN","question":"OpenTest","yesOrNoAnswer":false,"openAnswer":"OpenTest"}]}

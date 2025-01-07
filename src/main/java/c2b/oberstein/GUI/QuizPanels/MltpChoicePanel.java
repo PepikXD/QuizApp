@@ -38,27 +38,27 @@ public class MltpChoicePanel extends QuestionPanel {
       rdbtnAnswer1.setFont(new Font("Unispace", Font.PLAIN, 25));
       rdbtnAnswer1.setBounds(25, 200, 25, 25);
       add(rdbtnAnswer1);
-      
-      rdbtnAnswer4 = new JRadioButton();
-      rdbtnAnswer4.setActionCommand("4");
-      buttonGroup.add(rdbtnAnswer4);
-      rdbtnAnswer4.setFont(new Font("Unispace", Font.PLAIN, 25));
-      rdbtnAnswer4.setBounds(25, 425, 25, 25);
-      add(rdbtnAnswer4);
-      
+
       rdbtnAnswer2 = new JRadioButton();
       rdbtnAnswer2.setActionCommand("2");
       buttonGroup.add(rdbtnAnswer2);
       rdbtnAnswer2.setFont(new Font("Unispace", Font.PLAIN, 25));
       rdbtnAnswer2.setBounds(25, 275, 25, 25);
       add(rdbtnAnswer2);
-      
+
       rdbtnAnswewr3 = new JRadioButton();
-      rdbtnAnswewr3.setActionCommand("4");
+      rdbtnAnswewr3.setActionCommand("3");
       buttonGroup.add(rdbtnAnswewr3);
       rdbtnAnswewr3.setFont(new Font("Unispace", Font.PLAIN, 25));
       rdbtnAnswewr3.setBounds(25, 350, 25, 25);
       add(rdbtnAnswewr3);
+
+      rdbtnAnswer4 = new JRadioButton();
+      rdbtnAnswer4.setActionCommand("4");
+      buttonGroup.add(rdbtnAnswer4);
+      rdbtnAnswer4.setFont(new Font("Unispace", Font.PLAIN, 25));
+      rdbtnAnswer4.setBounds(25, 425, 25, 25);
+      add(rdbtnAnswer4);
       
       lblAnswer1 = new JLabel("New label");
       lblAnswer1.setFont(new Font("Unispace", Font.PLAIN, 25));

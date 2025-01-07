@@ -21,7 +21,7 @@ public class ManageQuizView extends JPanel {
    private JLabel lblQuestion;
    private JLabel lblQuestType;
    private JPanel multipleChoicePanel;
-   private JComboBox questTypeComboBox;
+   private JComboBox<String> questTypeComboBox;
    private JLabel lblCorrectAnsMltpChoice;
    private JLabel lblWrongAnsMltpChoice_1;
    private JLabel lblWrongAnsMltpChoice_2;
@@ -29,10 +29,10 @@ public class ManageQuizView extends JPanel {
    private JButton btnCreateQuestion;
    private JButton btnSaveQuiz;
    private JLabel lblManageQuizes;
-   private JComboBox quizComboBox;
+   private JComboBox<String> quizComboBox;
    private JLabel lblChooseQuiz;
    private JLabel lblChooseQuestion;
-   private JComboBox questionComboBox;
+   private JComboBox<String> questionComboBox;
    private JButton btbDeleteSelectedQuiz;
    private JButton btnAddNewQuiz;
    private JButton btnDeleteSelectedQuestion;

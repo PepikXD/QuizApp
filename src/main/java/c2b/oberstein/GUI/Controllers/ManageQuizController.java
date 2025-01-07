@@ -19,6 +19,7 @@ public class ManageQuizController {
     */
    public static void deleteSelecetedQuiz(int index){
       QuizApp.getQuizzes().remove(index);
+      QuizIOUtil.deleteQuiz(manageQuizView.getQuizComboBox().getItemAt(index));
       removeFromComboBox(manageQuizView.getQuizComboBox(), index);
    }
 
@@ -161,6 +162,7 @@ public class ManageQuizController {
     */
    public static void goBack() {
       ChangePanels.changeToHome();
+      QuizApp.getMainFrame().setChooseQuizView(new ChooseQuizView());
    }
 
    /**
