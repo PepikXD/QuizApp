@@ -11,7 +11,11 @@ public class Quiz {
    
    private String name;
    private List<Question> questions;
-   
+
+   /**
+    *
+    * @return questions from all questions
+    */
    public String[] getQuestionsAsArray(){
       String[] s = new String[questions.size()];
       for (int i = 0; i < s.length; i++) {

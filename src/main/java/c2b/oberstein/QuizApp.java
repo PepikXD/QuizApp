@@ -19,7 +19,11 @@ public class QuizApp implements Runnable{
    @Getter
    @Setter
    private static CheckResults checkResults;
-   
+
+   /**
+    *
+    * @return of names of quizzes
+    */
    public static String[] getQuizzesNames(){
       String[] s = new String[quizzes.size()];
       for (int i = 0; i < s.length; i++) {

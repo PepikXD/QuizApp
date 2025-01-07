@@ -13,9 +13,7 @@ import java.awt.*;
 public class EndScreenView extends JPanel {
    
    private Quiz playedQuiz;
-   
-   private JButton btnPlayAgain;
-   private JButton btnChangeQuiz;
+
    private JButton btnEnd;
    private JLabel lblQuizNameText;
    private JLabel lblQuizName;
@@ -27,9 +25,7 @@ public class EndScreenView extends JPanel {
       setLayout(null);
       
       initialze();
-      
-//      add(btnPlayAgain);
-//      add(btnChangeQuiz);
+
       add(btnEnd);
       add(lblQuizNameText);
       add(lblQuizName);
@@ -39,20 +35,10 @@ public class EndScreenView extends JPanel {
    
    private void initialze(){
       
-      btnPlayAgain = new JButton("Play Again");
-      btnPlayAgain.setFont(new Font("Unispace", Font.PLAIN, 25));
-      btnPlayAgain.setBounds(350, 350, 300, 50);
-      btnPlayAgain.addActionListener(_ -> EndScreenController.playAgain());
-      
-      btnChangeQuiz = new JButton("Change Quiz");
-      btnChangeQuiz.setFont(new Font("Unispace", Font.PLAIN, 25));
-      btnChangeQuiz.setBounds(350, 410, 300, 50);
-      btnChangeQuiz.addActionListener(_ -> EndScreenController.changeQuiz());
-      
       btnEnd = new JButton("End");
       btnEnd.setFont(new Font("Unispace", Font.PLAIN, 25));
       btnEnd.setBounds(350, 470, 300, 50);
-      btnEnd.addActionListener(_ -> EndScreenController.end());
+      btnEnd.addActionListener(ae -> EndScreenController.end());
       
       lblQuizNameText = new JLabel("Quiz Name:");
       lblQuizNameText.setHorizontalAlignment(SwingConstants.CENTER);

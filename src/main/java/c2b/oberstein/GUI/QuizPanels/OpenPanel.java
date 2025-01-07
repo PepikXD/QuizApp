@@ -18,15 +18,6 @@ public class OpenPanel extends QuestionPanel {
       initialize();
    }
    
-   public OpenPanel(Question question) {
-      super(question);
-      
-      setLayout(null);
-      
-      initialize();
-      
-   }
-   
    private void initialize(){
       
       txtAreaAnswer = new JTextArea();

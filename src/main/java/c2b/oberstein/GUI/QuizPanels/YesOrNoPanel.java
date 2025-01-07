@@ -23,13 +23,6 @@ public class YesOrNoPanel extends QuestionPanel {
       setLayout(null);
       initialize();
    }
-   public YesOrNoPanel(Question question) {
-      super(question);
-      
-      setLayout(null);
-      
-      initialize();
-   }
    
    private void initialize(){
       

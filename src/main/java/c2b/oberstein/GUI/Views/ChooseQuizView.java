@@ -52,6 +52,6 @@ public class ChooseQuizView extends JPanel{
       btnPlay = new JButton("Play");
       btnPlay.setFont(new Font("Unispace", Font.PLAIN, 30));
       btnPlay.setBounds(400, 525, 200, 50);
-      btnPlay.addActionListener(_ -> ChooseQuizController.play(quizList.getSelectedIndex()));
+      btnPlay.addActionListener(ae -> ChooseQuizController.play(quizList.getSelectedIndex()));
    }
 }

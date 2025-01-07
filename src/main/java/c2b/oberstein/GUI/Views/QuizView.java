@@ -16,14 +16,6 @@ public class QuizView extends JPanel {
    
    private Quiz quiz;
    
-//   private JTabbedPane tabbedPane;
-   
-//   private ArrayList<QuestionPanel> questionPanelList = new ArrayList<>();
-//
-//   private int selectedIndex = 0;
-//
-//   private QuestionPanel activePanel;
-   
    public QuizView(String quizName) {
       
       this.quiz = QuizIOUtil.readQuiz(quizName);

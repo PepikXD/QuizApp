@@ -13,7 +13,6 @@ public class QuestionPanel extends JPanel {
    
    private Question question;
    private JTextArea txtAreaQuestion;
-   private JButton btnPrevious;
    private JButton btnNext;
    private JButton btnEnd;
    
@@ -22,22 +21,12 @@ public class QuestionPanel extends JPanel {
       
       initialize();
    }
-   
-   public QuestionPanel(Question question) {
-      this.question = question;
-      
-      setBounds(10,10,980,580);
-      
-      initialize();
 
-      btnPrevious.setVisible(false);
-   }
    
    private void initialize(){
       
       txtAreaQuestion = new JTextArea();
       txtAreaQuestion.setRows(4);
-//      txtAreaQuestion.setText(question.getQuestion());
       txtAreaQuestion.setText("");
       txtAreaQuestion.setEditable(false);
       txtAreaQuestion.setLineWrap(true);
@@ -45,22 +34,16 @@ public class QuestionPanel extends JPanel {
       txtAreaQuestion.setBounds(10, 10, 950, 150);
       add(txtAreaQuestion);
       
-      btnPrevious = new JButton("Previous");
-      btnPrevious.setFont(new Font("Unispace", Font.PLAIN, 20));
-      btnPrevious.setBounds(25, 500, 150, 40);
-      btnPrevious.addActionListener(_ -> QuizViewController.previousBtn());
-//      add(btnPrevious);
-      
       btnNext = new JButton("Next");
       btnNext.setFont(new Font("Unispace", Font.PLAIN, 20));
       btnNext.setBounds(800, 500, 150, 40);
-      btnNext.addActionListener(_ -> QuizViewController.nextBtn());
+      btnNext.addActionListener(ae -> QuizViewController.nextBtn());
       add(btnNext);
       
       btnEnd = new JButton("End Quiz");
       btnEnd.setFont(new Font("Unispace", Font.PLAIN, 20));
       btnEnd.setBounds(800, 500, 150, 40);
-      btnEnd.addActionListener(_ -> QuizViewController.endBtn());
+      btnEnd.addActionListener(ae -> QuizViewController.endBtn());
       add(btnEnd);
    }
 }

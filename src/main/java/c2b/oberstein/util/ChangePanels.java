@@ -9,7 +9,8 @@ public class ChangePanels {
    
    private static MainFrame mainFrame = QuizApp.getMainFrame();
    
-   
+   // all methods below does practicly the same
+   // the change the active panel in main frame and refreshes the window to disply correct
    public static void changeToHome(){
       
       mainFrame.remove(mainFrame.getActivePanel());
@@ -31,8 +32,8 @@ public class ChangePanels {
    public static void changeToQuiz(String quizName){
       
       mainFrame.remove(mainFrame.getActivePanel());
-      mainFrame.setQuizView(new QuizView(quizName));
-      QuizApp.setCheckResults(new CheckResults(mainFrame.getQuizView().getQuiz()));
+      mainFrame.setQuizView(new QuizView(quizName)); // creates the correct quiz in quiz view
+      QuizApp.setCheckResults(new CheckResults(mainFrame.getQuizView().getQuiz())); // creates coresponding result checker for quiz
       QuizViewController.nextBtn();
       mainFrame.setActivePanel(mainFrame.getQuizView());
       mainFrame.add(mainFrame.getActivePanel());
@@ -43,7 +44,7 @@ public class ChangePanels {
    public static void changeToEnd(String quizName){
       
       mainFrame.remove(mainFrame.getActivePanel());
-      mainFrame.setEndScreenView(new EndScreenView(quizName));
+      mainFrame.setEndScreenView(new EndScreenView(quizName)); // creates correct end screen to display from correct quiz
       mainFrame.setActivePanel(mainFrame.getEndScreenView());
       mainFrame.add(mainFrame.getActivePanel());
       mainFrame.revalidate();

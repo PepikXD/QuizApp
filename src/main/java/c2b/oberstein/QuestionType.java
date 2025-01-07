@@ -11,7 +11,11 @@ public enum QuestionType {
    QuestionType(String value) {
       this.value = value;
    }
-   
+
+   /**
+    *
+    * @return all enums value field
+    */
    public static String[] getEnumValuesAsStrings(){
       String[] s = new String[QuestionType.values().length];
       for (int i = 0; i < s.length; i++) {

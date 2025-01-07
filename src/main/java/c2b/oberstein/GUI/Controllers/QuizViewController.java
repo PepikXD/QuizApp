@@ -10,52 +10,17 @@ import java.util.zip.*;
 
 public class QuizViewController {
    private static QuizView quizView = QuizApp.getMainFrame().getQuizView();
-   
 
-   public static void previousBtn() {
-      
-      if (quizView.getSelectedIndex() == 0){
-         quizView.getMltpChoicePanel().getBtnPrevious().setVisible(false);
-         quizView.getYesOrNoPanel().getBtnPrevious().setVisible(false);
-         quizView.getOpenPanel().getBtnPrevious().setVisible(false);
-         quizView.setSelectedIndex(quizView.getSelectedIndex()+1);
-      }
-      
-      System.out.println(quizView.getSelectedIndex());
-      quizView.setSelectedIndex(quizView.getSelectedIndex()-1);
-      Question prevQ = quizView.getQuestions().get(quizView.getSelectedIndex());
-      System.out.println(quizView.getSelectedIndex());
-      
-      if (quizView.getSelectedIndex() < quizView.getQuestions().size()-1){
-         quizView.getMltpChoicePanel().getBtnNext().setVisible(true);
-         quizView.getYesOrNoPanel().getBtnNext().setVisible(true);
-         quizView.getOpenPanel().getBtnNext().setVisible(true);
-         
-         quizView.getMltpChoicePanel().getBtnEnd().setVisible(false);
-         quizView.getYesOrNoPanel().getBtnEnd().setVisible(false);
-         quizView.getOpenPanel().getBtnEnd().setVisible(false);
-      }
-      
-      
-      changeDisplayedQuestion(prevQ);
-      
-      quizView.revalidate();
-      quizView.repaint();
-   }
 
    public static void nextBtn(){
+      //chesck answer
       checkWhich();
-      System.out.println(quizView.getSelectedIndex());
+
+      // sets the next question
       quizView.setSelectedIndex(quizView.getSelectedIndex()+1);
       Question nextQ = quizView.getQuestions().get(quizView.getSelectedIndex());
-      System.out.println(quizView.getSelectedIndex());
-      
-      if (quizView.getSelectedIndex() > 0){
-         quizView.getMltpChoicePanel().getBtnPrevious().setVisible(true);
-         quizView.getYesOrNoPanel().getBtnPrevious().setVisible(true);
-         quizView.getOpenPanel().getBtnPrevious().setVisible(true);
-      }
-      
+
+      // changes the next button to end quiz button
       if (quizView.getSelectedIndex() == quizView.getQuestions().size()-1){
          quizView.getMltpChoicePanel().getBtnNext().setVisible(false);
          quizView.getYesOrNoPanel().getBtnNext().setVisible(false);
@@ -72,12 +37,17 @@ public class QuizViewController {
    }
 
    public static void endBtn() {
+      //checks answer
       checkWhich();
       quizView.setSelectedIndex(0);
       ChangePanels.changeToEnd(quizView.getQuiz().getName());
       
    }
-   
+
+   /**
+    * changes the dislayed panel basen on questionvtype and updatess all necessery fields
+    * @param q question to display next
+    */
    private static void changeDisplayedQuestion(Question q){
       
       switch (q.getQuestionType().value){
@@ -121,7 +91,10 @@ public class QuizViewController {
       }
       
    }
-   
+
+   /**
+    * checks if the answer is correct
+    */
    private static void checkWhich(){
       if (quizView.getSelectedIndex() > -1) {
          switch (quizView.getQuestions().get(quizView.getSelectedIndex()).getQuestionType().value) {

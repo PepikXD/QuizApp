@@ -38,12 +38,12 @@ public class HomeView extends JPanel {
       manageQuizesButton = new JButton("Manage Quizes");
       manageQuizesButton.setBounds(150, 400, 300, 100);
       manageQuizesButton.setFont(new Font("Unispace", Font.PLAIN, 30));
-      manageQuizesButton.addActionListener(_ -> HomeViewController.goToManageView());
+      manageQuizesButton.addActionListener(ae -> HomeViewController.goToManageView());
       
       chooseQuizButton = new JButton("Choose Quiz");
       chooseQuizButton.setBounds(550, 400, 300, 100);
       chooseQuizButton.setFont(new Font("Unispace", Font.PLAIN, 30));
-      chooseQuizButton.addActionListener(_ -> HomeViewController.goToQuizChooseView());
+      chooseQuizButton.addActionListener(ae -> HomeViewController.goToQuizChooseView());
    }
 }
 

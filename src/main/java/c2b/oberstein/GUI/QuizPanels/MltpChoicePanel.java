@@ -28,14 +28,6 @@ public class MltpChoicePanel extends QuestionPanel {
       setLayout(null);
       initialize();
    }
-   public MltpChoicePanel(Question question) {
-      super(question);
-      
-      setLayout(null);
-      
-      initialize();
-      
-   }
    
    private void initialize(){
       

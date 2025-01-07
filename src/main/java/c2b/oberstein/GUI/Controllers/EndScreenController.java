@@ -7,15 +7,7 @@ import c2b.oberstein.util.*;
 public class EndScreenController {
    
    private static EndScreenView endScreenView = QuizApp.getMainFrame().getEndScreenView();
-   
-   public static void playAgain(){
-      ChangePanels.changeToQuiz(endScreenView.getLblQuizName().getText());
-   }
-   
-   public static void changeQuiz() {
-      ChangePanels.changeToChooseQuiz();
-   }
-   
+
    public static void end() {
       System.exit(0);
    }
